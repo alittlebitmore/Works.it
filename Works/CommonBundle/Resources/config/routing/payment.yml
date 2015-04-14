@@ -1,0 +1,15 @@
+payment_success:
+    pattern:  /success
+    defaults: { _controller: "WorksCommonBundle:Payment:success" }
+
+
+payment_status:
+    pattern:  /status
+    defaults: { _controller: "WorksCommonBundle:Payment:status" }
+    requirements: { _method: post }
+    
+payment:
+    pattern:  /{id}
+    defaults: { _controller: "WorksCommonBundle:Payment:buy" }
+    requirements:
+        id:  \d+ 

@@ -1,0 +1,11 @@
+works_common_job:
+    resource: "@WorksCommonBundle/Resources/config/routing/job.yml"
+    prefix:   /job
+
+works_common_payment:
+    resource: "@WorksCommonBundle/Resources/config/routing/payment.yml"
+    prefix:   /payment
+
+works_common_homepage:
+    path:     /
+    defaults: { _controller: WorksCommonBundle:Default:index }
